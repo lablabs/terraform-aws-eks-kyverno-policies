@@ -32,7 +32,7 @@ variable "helm_repo_url" {
 
 variable "helm_create_namespace" {
   type        = bool
-  default     = false
+  default     = true
   description = "Create the namespace if it does not yet exist"
 }
 
