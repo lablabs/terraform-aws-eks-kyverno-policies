@@ -26,7 +26,7 @@ variable "helm_release_name" {
 
 variable "helm_repo_url" {
   type        = string
-  default     = "<helm_repo_url>" #TODO
+  default     = "https://lablabs.github.io/kyverno-policies/"
   description = "Helm repository"
 }
 
@@ -45,13 +45,13 @@ variable "namespace" {
 variable "settings" {
   type        = map(any)
   default     = {}
-  description = "Additional helm sets which will be passed to the Helm chart values, see https://hub.helm.sh/charts/stable/kyverno-policies"
+  description = "Additional helm sets which will be passed to the Helm chart values, see https://artifacthub.io/packages/helm/kyverno-policies/kyverno-policies"
 }
 
 variable "values" {
   type        = string
   default     = ""
-  description = "Additional yaml encoded values which will be passed to the Helm chart, see https://hub.helm.sh/charts/stable/kyverno-policies"
+  description = "Additional yaml encoded values which will be passed to the Helm chart, see https://artifacthub.io/packages/helm/kyverno-policies/kyverno-policies"
 }
 
 # ================ argo variables (required) ================
