@@ -11,7 +11,7 @@ locals {
   addon = {
     name = "kyverno-policies"
 
-    helm_chart_version = "0.2.1"
+    helm_chart_version = "0.2.0"
     helm_repo_url      = "https://lablabs.github.io/kyverno-policies/"
   }
 
