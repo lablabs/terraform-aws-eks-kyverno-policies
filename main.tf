@@ -17,4 +17,6 @@ locals {
 
   addon_values = yamlencode({
   })
+
+  addon_depends_on = []
 }
